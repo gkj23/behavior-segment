@@ -1,0 +1,467 @@
+{
+  "task": "picking_up_trash",
+  "task_index": 1,
+  "task_prompt": "Put the three can of soda from the living room inside the tash can in the kitchen.",
+  "video_path": "D:\\cur_semester\\research\\Behavior\\BEHAVIOR-MEM\\Behavior_segment\\video_example\\task-0001\\observation.images.rgb.head\\episode_00010000.mp4",
+  "model": "human",
+  "total_frames": 4441,
+  "fps": 30.0,
+  "sample_interval": 30,
+  "num_sampled_frames": 149,
+  "sampled_indices": [
+    0,
+    30,
+    60,
+    90,
+    120,
+    150,
+    180,
+    210,
+    240,
+    270,
+    300,
+    330,
+    360,
+    390,
+    420,
+    450,
+    480,
+    510,
+    540,
+    570,
+    600,
+    630,
+    660,
+    690,
+    720,
+    750,
+    780,
+    810,
+    840,
+    870,
+    900,
+    930,
+    960,
+    990,
+    1020,
+    1050,
+    1080,
+    1110,
+    1140,
+    1170,
+    1200,
+    1230,
+    1260,
+    1290,
+    1320,
+    1350,
+    1380,
+    1410,
+    1440,
+    1470,
+    1500,
+    1530,
+    1560,
+    1590,
+    1620,
+    1650,
+    1680,
+    1710,
+    1740,
+    1770,
+    1800,
+    1830,
+    1860,
+    1890,
+    1920,
+    1950,
+    1980,
+    2010,
+    2040,
+    2070,
+    2100,
+    2130,
+    2160,
+    2190,
+    2220,
+    2250,
+    2280,
+    2310,
+    2340,
+    2370,
+    2400,
+    2430,
+    2460,
+    2490,
+    2520,
+    2550,
+    2580,
+    2610,
+    2640,
+    2670,
+    2700,
+    2730,
+    2760,
+    2790,
+    2820,
+    2850,
+    2880,
+    2910,
+    2940,
+    2970,
+    3000,
+    3030,
+    3060,
+    3090,
+    3120,
+    3150,
+    3180,
+    3210,
+    3240,
+    3270,
+    3300,
+    3330,
+    3360,
+    3390,
+    3420,
+    3450,
+    3480,
+    3510,
+    3540,
+    3570,
+    3600,
+    3630,
+    3660,
+    3690,
+    3720,
+    3750,
+    3780,
+    3810,
+    3840,
+    3870,
+    3900,
+    3930,
+    3960,
+    3990,
+    4020,
+    4050,
+    4080,
+    4110,
+    4140,
+    4170,
+    4200,
+    4230,
+    4260,
+    4290,
+    4320,
+    4350,
+    4380,
+    4410,
+    4440
+  ],
+  "subtasks": [
+    {
+      "order": 0,
+      "key": "robot_near_trash_can",
+      "subtask": "Move to the trash can.",
+      "notes": "Ordered from demo skill sequence."
+    },
+    {
+      "order": 1,
+      "key": "trash_can_picked_up",
+      "subtask": "Pick up the trash can from the floor.",
+      "notes": "Added from demo skill sequence; required before collecting soda cans."
+    },
+    {
+      "order": 2,
+      "key": "robot_near_can_of_soda_1",
+      "subtask": "Move to the can of soda.",
+      "notes": "Ordered from demo skill sequence."
+    },
+    {
+      "order": 3,
+      "key": "can_of_soda_1_picked_up",
+      "subtask": "Pick up the can of soda from the floor.",
+      "notes": "Ordered from demo skill sequence."
+    },
+    {
+      "order": 4,
+      "key": "can_of_soda_1_in_trash",
+      "subtask": "Place the can of soda in the trash can.",
+      "notes": "Ordered from demo skill sequence."
+    },
+    {
+      "order": 5,
+      "key": "robot_near_can_of_soda_2",
+      "subtask": "Move to the can of soda.",
+      "notes": "Ordered from demo skill sequence."
+    },
+    {
+      "order": 6,
+      "key": "can_of_soda_2_picked_up",
+      "subtask": "Pick up the can of soda from the floor.",
+      "notes": "Ordered from demo skill sequence."
+    },
+    {
+      "order": 7,
+      "key": "can_of_soda_2_in_trash",
+      "subtask": "Place the can of soda in the trash can.",
+      "notes": "Ordered from demo skill sequence."
+    },
+    {
+      "order": 8,
+      "key": "robot_near_can_of_soda_3",
+      "subtask": "Move to the can of soda.",
+      "notes": "Ordered from demo skill sequence."
+    },
+    {
+      "order": 9,
+      "key": "can_of_soda_3_picked_up",
+      "subtask": "Pick up the can of soda from the floor.",
+      "notes": "Ordered from demo skill sequence."
+    },
+    {
+      "order": 10,
+      "key": "can_of_soda_3_in_trash",
+      "subtask": "Place the can of soda in the trash can.",
+      "notes": "Ordered from demo skill sequence."
+    },
+    {
+      "order": 11,
+      "key": "trash_can_on_floor",
+      "subtask": "Place the trash can on the floor.",
+      "notes": "Added from demo skill sequence; evaluated with the stage cursor so the initially true floor state does not skip earlier steps."
+    }
+  ],
+  "segments": [
+    {
+      "order": 0,
+      "key": "robot_near_trash_can",
+      "subtask": "Move to the trash can.",
+      "notes": "Ordered from demo skill sequence.",
+      "frame_range": [
+        0,
+        1457
+      ],
+      "time_range_sec": [
+        0.0,
+        48.567
+      ],
+      "sampled_index_range": [
+        0,
+        48
+      ],
+      "rationale": "Human annotated segment."
+    },
+    {
+      "order": 1,
+      "key": "trash_can_picked_up",
+      "subtask": "Pick up the trash can from the floor.",
+      "notes": "Added from demo skill sequence; required before collecting soda cans.",
+      "frame_range": [
+        1458,
+        1876
+      ],
+      "time_range_sec": [
+        48.6,
+        62.533
+      ],
+      "sampled_index_range": [
+        49,
+        62
+      ],
+      "rationale": "Human annotated segment."
+    },
+    {
+      "order": 2,
+      "key": "robot_near_can_of_soda_1",
+      "subtask": "Move to the can of soda.",
+      "notes": "Ordered from demo skill sequence.",
+      "frame_range": [
+        1877,
+        2397
+      ],
+      "time_range_sec": [
+        62.567,
+        79.9
+      ],
+      "sampled_index_range": [
+        63,
+        79
+      ],
+      "rationale": "Human annotated segment."
+    },
+    {
+      "order": 3,
+      "key": "can_of_soda_1_picked_up",
+      "subtask": "Pick up the can of soda from the floor.",
+      "notes": "Ordered from demo skill sequence.",
+      "frame_range": [
+        2398,
+        2986
+      ],
+      "time_range_sec": [
+        79.933,
+        99.533
+      ],
+      "sampled_index_range": [
+        80,
+        99
+      ],
+      "rationale": "Human annotated segment."
+    },
+    {
+      "order": 4,
+      "key": "can_of_soda_1_in_trash",
+      "subtask": "Place the can of soda in the trash can.",
+      "notes": "Ordered from demo skill sequence.",
+      "frame_range": [
+        2987,
+        3168
+      ],
+      "time_range_sec": [
+        99.567,
+        105.6
+      ],
+      "sampled_index_range": [
+        100,
+        105
+      ],
+      "rationale": "Human annotated segment."
+    },
+    {
+      "order": 5,
+      "key": "robot_near_can_of_soda_2",
+      "subtask": "Move to the can of soda.",
+      "notes": "Ordered from demo skill sequence.",
+      "frame_range": [
+        3169,
+        3285
+      ],
+      "time_range_sec": [
+        105.633,
+        109.5
+      ],
+      "sampled_index_range": [
+        106,
+        109
+      ],
+      "rationale": "Human annotated segment."
+    },
+    {
+      "order": 6,
+      "key": "can_of_soda_2_picked_up",
+      "subtask": "Pick up the can of soda from the floor.",
+      "notes": "Ordered from demo skill sequence.",
+      "frame_range": [
+        3286,
+        3624
+      ],
+      "time_range_sec": [
+        109.533,
+        120.8
+      ],
+      "sampled_index_range": [
+        110,
+        120
+      ],
+      "rationale": "Human annotated segment."
+    },
+    {
+      "order": 7,
+      "key": "can_of_soda_2_in_trash",
+      "subtask": "Place the can of soda in the trash can.",
+      "notes": "Ordered from demo skill sequence.",
+      "frame_range": [
+        3625,
+        3772
+      ],
+      "time_range_sec": [
+        120.833,
+        125.733
+      ],
+      "sampled_index_range": [
+        121,
+        125
+      ],
+      "rationale": "Human annotated segment."
+    },
+    {
+      "order": 8,
+      "key": "robot_near_can_of_soda_3",
+      "subtask": "Move to the can of soda.",
+      "notes": "Ordered from demo skill sequence.",
+      "frame_range": [
+        3773,
+        4017
+      ],
+      "time_range_sec": [
+        125.767,
+        133.9
+      ],
+      "sampled_index_range": [
+        126,
+        133
+      ],
+      "rationale": "Human annotated segment."
+    },
+    {
+      "order": 9,
+      "key": "can_of_soda_3_picked_up",
+      "subtask": "Pick up the can of soda from the floor.",
+      "notes": "Ordered from demo skill sequence.",
+      "frame_range": [
+        4018,
+        4364
+      ],
+      "time_range_sec": [
+        133.933,
+        145.467
+      ],
+      "sampled_index_range": [
+        134,
+        145
+      ],
+      "rationale": "Human annotated segment."
+    },
+    {
+      "order": 10,
+      "key": "can_of_soda_3_in_trash",
+      "subtask": "Place the can of soda in the trash can.",
+      "notes": "Ordered from demo skill sequence.",
+      "frame_range": [
+        4365,
+        4439
+      ],
+      "time_range_sec": [
+        145.5,
+        147.967
+      ],
+      "sampled_index_range": [
+        146,
+        147
+      ],
+      "rationale": "Human annotated segment."
+    },
+    {
+      "order": 11,
+      "key": "trash_can_on_floor",
+      "subtask": "Place the trash can on the floor.",
+      "notes": "Added from demo skill sequence; evaluated with the stage cursor so the initially true floor state does not skip earlier steps.",
+      "frame_range": [
+        4440,
+        4440
+      ],
+      "time_range_sec": [
+        148.0,
+        148.0
+      ],
+      "sampled_index_range": [
+        148,
+        148
+      ],
+      "rationale": "Human annotated segment."
+    }
+  ],
+  "timestamp": "2026-06-10 00:58:37"
+}
